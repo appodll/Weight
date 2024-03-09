@@ -64,7 +64,7 @@ class ContainerList extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                      padding: EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 14),
                       margin: EdgeInsets.only(top: 18),
                       child: Text(
                         "Kilo        ${this.kilo}kg",
@@ -74,7 +74,7 @@ class ContainerList extends StatelessWidget {
                         ),
                       )),
                   Container(
-                      padding: EdgeInsets.only(right: 19),
+                      padding: EdgeInsets.only(right: 20),
                       margin: EdgeInsets.only(top: 20),
                       child: Text(
                         "Boy       ${this.boy}cm",
@@ -97,4 +97,5 @@ class ContainerList extends StatelessWidget {
       ),
     );
   }
+
 }
