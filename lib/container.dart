@@ -97,6 +97,4 @@ class ContainerList extends StatelessWidget {
       ),
     );
   }
-
-  list() {}
 }
