@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/get_rx.dart';
@@ -43,7 +42,7 @@ class Controller extends GetxController {
   }
 
   kontrol(){
-    var kilo = int.parse(list?.last['Kilo']);
+    var kilo = double.parse(list?.last['Kilo']);
     var boy = pow(int.parse(list?.last['Boy']), 2)/10000;
     if ((kilo/boy)<18.5){
       value = 0.3.obs;
