@@ -64,10 +64,10 @@ class ContainerList extends StatelessWidget {
               Column(
                 children: [
                   Container(
-                      padding: EdgeInsets.only(right: 14),
+                      padding: EdgeInsets.only(right: Get.width/15),
                       margin: EdgeInsets.only(top: 18),
                       child: Text(
-                        "Kilo        ${this.kilo}kg",
+                        "Kilo     ${this.kilo}kg",
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
