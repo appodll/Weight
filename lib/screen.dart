@@ -23,11 +23,11 @@ class Screen extends StatelessWidget {
             if ((_ctrl.t1.value.text == "" ||
                     _ctrl.t2.value.text == "" ||
                     _ctrl.t3.value.text == "") ||
-                (int.tryParse(_ctrl.t1.value.text) == null &&
+                (double.tryParse(_ctrl.t1.value.text) == null &&
                     int.tryParse(_ctrl.t2.value.text) == null &&
                     int.tryParse(_ctrl.t3.value.text) == null) ||
-                (int.parse(_ctrl.t1.value.text).toInt() < 20 ||
-                    int.parse(_ctrl.t1.value.text).toInt() > 250) ||
+                (double.parse(_ctrl.t1.value.text).toInt() < 20 ||
+                    double.parse(_ctrl.t1.value.text).toInt() > 250) ||
                 (int.parse(_ctrl.t2.value.text).toInt() < 100 ||
                     int.parse(_ctrl.t2.value.text).toInt() > 250) ||
                 (int.parse(_ctrl.t3.value.text).toInt() < 5 ||
@@ -78,7 +78,7 @@ class Screen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         borderSide:
                             BorderSide(color: Color.fromRGBO(98, 87, 255, 1))),
-                    hintText: "Çəki (65,78...)",
+                    hintText: "Çəki (65.4,78.0...)",
                   ),
                 ),
               ),
